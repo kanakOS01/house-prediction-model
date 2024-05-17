@@ -30,6 +30,7 @@ def get_prediction():
 
     response.headers.add('Access-Control-Allow-Origin', '*')
 
+    print(response)
     return response
 
 if __name__ == '__main__':

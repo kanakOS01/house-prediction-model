@@ -33,12 +33,12 @@ def load_artifacts():
     global __locations
     global __model
 
-    with open("./artifacts/columns.json", 'r') as f:
+    with open("artifacts/columns.json", 'r') as f:
         # json.load(f) gives a dictionary from a json file
         __data_col = json.load(f)['data_columns']
         __locations = __data_col[3::]
     
-    with open("./artifacts/bengaluru_house_prices_model.pickle", 'rb') as f:
+    with open("artifacts/bengaluru_house_prices_model.pickle", 'rb') as f:
         __model = pickle.load(f)
     
     print('Loading arrifacts finished')
